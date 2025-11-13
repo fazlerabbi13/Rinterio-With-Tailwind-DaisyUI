@@ -13,12 +13,14 @@
         rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://kit.fontawesome.com/885136c701.js" crossorigin="anonymous"></script>
 
 </head>
 
 <body>
-    <header class="w-[1200px] mx-auto">
-        <nav class="w-[1200px] mx-auto">
+    <header class="max-w-[1200px] mx-auto">
+        <!-- navbar -->
+        <nav class="max-w-[1200px] mx-auto">
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
                     <div class="dropdown">
@@ -40,13 +42,18 @@
                             <li><a>Contact Us</a></li>
                         </ul>
                     </div>
-                    <a class="btn btn-ghost text-xl">daisyUI</a>
+                    <a class="btn btn-ghost text-xl">
+                        <span class="bg-[#ABEF5F] rounded-full px-2.5 py-1 ml-2">
+                            <i class="fa-solid fa-arrow-right -rotate-45"></i>
+                        </span>
+                        <span>Rinterio</span>
+                    </a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                     <ul class="menu menu-horizontal px-1">
                         <li><a>Home</a></li>
                         <li>
-                            <li><a>Services</a></li>
+                        <li><a>Services</a></li>
                         </li>
                         <li><a>Portfolio</a></li>
                         <li><a>Blogs</a></li>
@@ -54,15 +61,31 @@
                     </ul>
                 </div>
                 <div class="navbar-end">
-                    <a class="btn">Button</a>
+                    
+                    <a class="btn bg-[#ABEF5F] rounded-full px-4! py-6! text-lg font-bold">Book Consult
+                        <span class="bg-black rounded-full px-2.5 py-1 ml-2">
+                            <i class="fa-solid text-white fa-arrow-right -rotate-45"></i>
+                        </span>
+                    </a>
                 </div>
             </div>
         </nav>
 
-    <!-- Banner -->
-     <section class="h-[700px]">
-        <img src="" alt="">
-     </section>
+        <!-- Banner -->
+        <section class="mt-5 h-[700px] max-w-[1200px] mx-auto">
+            <img class="mx-auto" src="assets/banner.png" alt="">
+            <h3 class="mt-5 font-bold text-center text-5xl">A barn house of this design has a <br>
+                striking appearance</h3>
+            <p class="mt-5 text-gray-500 text-wrap text-center">The barn house captivates with its blend of rustic charm
+                and modern sophistication,
+                featuring weathered wood, sleek
+                metal accents, and large windows
+                that flood the space with natural
+                light.</p>
+            <div class="text-center">
+                <button class="mt-5 w-[200px] rounded-xl btn bg-[#ABEF5F] btn-active">View Details</button>
+            </div>
+        </section>
     </header>
     <main>
 
